@@ -12,9 +12,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 
+import java.util.Arrays;
+import java.util.List;
+
 
 public class MainActivity extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+    public static final List<VocabItem> VOCAB_ITEMS = Arrays.asList(new VocabItem[]{
+            new VocabItem("中国", "Zhōng guó", "China"),
+            new VocabItem("澳大利亚", "Ào dà lì yǎ", "Australia"),
+            new VocabItem("英国", "Yīng guó", "England")
+    });
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.

@@ -246,8 +246,8 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.action_example) {
-            Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
+        if (item.getItemId() == R.id.action_add_new_vocab_item) {
+            Toast.makeText(getActivity(), "Hey babes, wanna add a new vocab item?", Toast.LENGTH_SHORT).show();
             return true;
         }
 

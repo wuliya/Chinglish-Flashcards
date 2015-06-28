@@ -1,5 +1,7 @@
 package com.wuli.chinglishflashcards;
 
+import static com.wuli.chinglishflashcards.MainActivity.VOCAB_ITEMS;
+
 import android.app.Fragment;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -17,12 +19,6 @@ import java.util.Random;
 
 
 public class FlashcardFragment extends Fragment {
-
-    private static final List<VocabItem> VOCAB_ITEMS = Arrays.asList(new VocabItem[] {
-            new VocabItem("中国", "zhōng guó", "China"),
-            new VocabItem("澳大利亚", "Ào dà lì yǎ", "Australia"),
-            new VocabItem("英国", "Yīng guó", "England")
-    });
     public static final int NUMBER_OF_ANSWERS = 3;
 
     private List<TextView> answerButtons = new ArrayList<>();

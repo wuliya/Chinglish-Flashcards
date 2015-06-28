@@ -1,5 +1,6 @@
 package com.wuli.chinglishflashcards;
 
+import android.app.DialogFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.support.v7.app.ActionBar;
@@ -247,7 +248,8 @@ public class NavigationDrawerFragment extends Fragment {
         }
 
         if (item.getItemId() == R.id.action_add_new_vocab_item) {
-            Toast.makeText(getActivity(), "Hey babes, wanna add a new vocab item?", Toast.LENGTH_SHORT).show();
+            DialogFragment newFragment = new AddNewVocabDialogFragment();
+            newFragment.show(getFragmentManager(), "addNewVocabItem");
             return true;
         }
 

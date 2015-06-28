@@ -49,7 +49,7 @@ public class MainActivity extends ActionBarActivity
         switch(position) {
             case 0: // Summary
                 fragmentManager.beginTransaction()
-                        .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                        .replace(R.id.container, new ItemFragment())
                         .commit();
                 break;
             case 1: // Flashcard
